@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    
+    <title>Formulário de Compras</title>
+</head>
+
+<body>
+    <div class="backgrd">
+        <label2> Formulário <br> para compra de <br> <b>Pacote de adesivos</b>  
+        <div class="box">
+        <img src="box.png" alt="some text" width=150 height=125> </div></label2> 
+        
+        <br>
+        
+        <div class="container">
+
+            <form id="Pacote de adesivos" method="get" action="Pacote_de_adesivos.php">
+                <label><b>Quais adesivos:</b><br>
+                    <input type="checkbox" id="react"> 
+                    <span>React</span><br>
+                    <input type="checkbox" id="vue">
+                    <span>Vue</span><br>
+                    <input type="checkbox" id="angular">
+                    <span>Angular</span><br>
+                </label><br>
+
+                <label><b>Quantos adesivos de cada?</b> <br>
+                    <input type="number" name="Uname" id="Uname"><br></b>
+                </label><br>
+
+                <label><b>Observações: </b><br>
+                    <textarea name="obs" id="obs" placeholder="Mensagem"></textarea>
+                </label><br>
+
+                 <div class="dropdown">
+       <button class="btn botaoPagamento dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Forma de Pagamento
+       </button>
+       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+         <a class="dropdown-item" href="#">Cartão</a>
+         <a class="dropdown-item" href="#">Pix</a>
+         <a class="dropdown-item" href="#">Boleto</a>
+       </div>
+     </div> 
+            </form>
+           
+        </div>
+        
+        <div class="bt-right">
+            <br>
+            
+            <button class="btn btn-primary" type="submit" name="enviar" id="botao" onclick="Enviar()">Finalizar Compra</button>
+
+        </div>
+
+
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+    
+</body>
+
+</html>
